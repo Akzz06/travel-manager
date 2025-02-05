@@ -1,0 +1,172 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Navbar styling remains unchanged */
+.navbar {
+    background-color: #4CAF50;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
+.welcome {
+    color: #fff;
+    font-size: 1rem;
+    margin-left: auto;
+    font-weight: normal;
+}
+
+/* Heading styling */
+h1 {
+    color: #34495e;
+    margin: 1.5rem 0;
+    font-size: 2.5em;
+}
+
+/* Main content styling */
+.main-content {
+    flex: 1;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Package details styling */
+.package-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.package-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.package-info p {
+    margin: 0.5rem 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.package-info b {
+    color: #34495e;
+}
+
+.package-name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.package-price {
+    font-size: 1.5em;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Booking Form Styling */
+.booking-form {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.booking-form h2 {
+    font-size: 1.8em;
+    color: #34495e;
+    margin-bottom: 1rem;
+}
+
+.booking-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-size: 1em;
+    color: #555;
+}
+
+.booking-form input[type="date"],
+.booking-form input[type="submit"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.booking-form input[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form input[type="submit"]:hover {
+    background-color: #219150;
+}
+
+/* Footer styling remains unchanged */
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content, .package-details {
+        padding: 1rem;
+    }
+    .package-image {
+        width: 100%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .booking-form input[type="date"], 
+    .booking-form input[type="submit"] {
+        font-size: 0.9em;
+    }
+}
